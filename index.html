@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wafi Hafez | B2B Strategist Copywriter</title>
+<meta name="description" content="Wafi Hafez is a B2B strategist copywriter. Landing pages and email sequences for SaaS and natural-product brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F2F5F8;
+    --surface: #FFFFFF;
+    --ink: #16212C;
+    --muted: #55626F;
+    --rule: #D5DCE3;
+    --pen: #C4323F;
+    --pen-wash: #FBEDEE;
+    --blue: #1D4ED8;
+    --blue-wash: #E8EEFC;
+    --marker: #FFE45C;
+    --on-blue: #FFFFFF;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --text: "Newsreader", Georgia, "Times New Roman", serif;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #101821;
+      --surface: #17212C;
+      --ink: #E9EEF3;
+      --muted: #9AA8B6;
+      --rule: #2B3947;
+      --pen: #F0777F;
+      --pen-wash: #2A1A1E;
+      --blue: #7C9CFF;
+      --blue-wash: #1A2438;
+      --marker: #6B5A00;
+      --on-blue: #0E1420;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--text);
+    font-size: 1.125rem;
+    line-height: 1.65;
+  }
+  a { color: var(--blue); }
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+  .prose { max-width: 40rem; }
+  h1, h2, h3 { font-family: var(--display); line-height: 1.12; margin: 0; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(2.2rem, 5.6vw, 3.9rem); font-weight: 700; max-width: 17ch; }
+  h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
+  h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+  p { margin: 0 0 1rem; }
+
+  header { padding: 1.5rem 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .name { font-family: var(--display); font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; }
+  nav a { font-family: var(--display); font-weight: 500; font-size: 1rem; margin-left: 1.5rem; color: var(--ink); text-decoration: none; border-bottom: 2px solid transparent; }
+  nav a:hover { border-bottom-color: var(--blue); }
+
+  .hero { padding: 4rem 0 4.5rem; }
+  .hero .prose { margin-top: 1.75rem; font-size: 1.25rem; }
+  .btn {
+    display: inline-block; margin-top: 0.75rem;
+    font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+    background: var(--blue); color: var(--on-blue);
+    padding: 0.9rem 1.6rem; border-radius: 6px; text-decoration: none;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn.quiet { background: transparent; color: var(--ink); border: 2px solid var(--ink); margin-left: 0.75rem; }
+
+  section { padding: 3.5rem 0; border-top: 1px solid var(--rule); }
+  .intro { color: var(--muted); max-width: 40rem; margin-bottom: 2.5rem; }
+
+  .case { margin-bottom: 4rem; }
+  .case:last-child { margin-bottom: 0; }
+  .tag { font-family: var(--display); font-weight: 500; font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .result { background: var(--marker); display: inline; padding: 0.1rem 0.3rem; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.5rem 0; }
+  .col { background: var(--surface); padding: 1.4rem 1.5rem; border-radius: 4px; }
+  .col.before { border-left: 4px solid var(--pen); background: var(--pen-wash); }
+  .col.after { border-left: 4px solid var(--blue); }
+  .col h4 { font-family: var(--display); font-size: 1rem; margin: 0 0 0.75rem; }
+  .col.before h4 { color: var(--pen); }
+  .col.after h4 { color: var(--blue); }
+  .col p:last-child { margin-bottom: 0; }
+  .col p, .col li { font-size: 1.05rem; }
+  .col.before p { color: var(--muted); }
+  .note { max-width: 40rem; color: var(--muted); font-size: 1rem; }
+  .note strong { color: var(--ink); }
+  .headline-line { font-family: var(--display); font-weight: 700; font-size: 1.3rem; line-height: 1.25; margin-bottom: 0.75rem !important; color: var(--ink) !important; }
+  .cta-line { font-family: var(--display); font-weight: 700; color: var(--blue); }
+
+  .email { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 1.6rem 1.75rem; max-width: 40rem; margin: 1.5rem 0; }
+  .email .meta { font-family: var(--display); font-size: 0.95rem; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 0.75rem; margin-bottom: 1.1rem; }
+  .email .meta span { display: block; }
+  .email p { margin-bottom: 0.85rem; font-size: 1.05rem; }
+  .email .btn-fake { display: inline-block; font-family: var(--display); font-weight: 700; background: var(--blue); color: var(--on-blue); padding: 0.65rem 1.2rem; border-radius: 6px; margin: 0.25rem 0 1rem; }
+
+  .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.5rem; }
+  .offers div { border-top: 3px solid var(--ink); padding-top: 1rem; }
+  .offers p { font-size: 1.02rem; color: var(--muted); margin: 0; }
+
+  footer { padding: 2.5rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
+
+  @media (max-width: 760px) {
+    .pair, .offers { grid-template-columns: 1fr; }
+    .btn.quiet { margin-left: 0; }
+    nav a { margin: 0 1rem 0 0; }
+    .hero { padding: 2.5rem 0 3rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="name" href="#top">Wafi Hafez</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Your page explains your product. Your buyer is still deciding whether to care.</h1>
+    <p class="prose">I’m Wafi Hafez, a B2B strategist copywriter. I rewrite landing pages and email sequences for SaaS and natural-product brands, so the right reader keeps reading and then acts.</p>
+    <a class="btn" href="mailto:wafi.hafez@wafi-copy.com?subject=My%20page">Send me your page</a>
+    <a class="btn quiet" href="#work">See the work</a>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Three pieces of work</h2>
+    <p class="intro">One sold out a real product. Two are practice rewrites, labelled as exactly that. I don’t pass off spec work as client work.</p>
+
+    <!-- CASE 1 -->
+    <article class="case">
+      <p class="tag">Real product, real result · Massage oil and cream for Al-Kahraman, my natural products store</p>
+      <h3>From a supplier’s two-line description to a sell-out</h3>
+      <p class="prose"><span class="result">35 bottles of oil and 23 jars of cream, 58 units in total, sold out in store within three days of publishing this copy.</span> Online ordering isn’t available in Syria, so the call to action had to move customers from the post to a conversation with a single comment.</p>
+
+      <div class="pair">
+        <div class="col before">
+          <h4>Before: the supplier’s copy</h4>
+          <p>Natural massage oil in two varieties: cinnamon and ginger, and almond and cypress.</p>
+          <p>Natural body massage for total muscle relaxation. Very important for cracked skin. Helps deeply moisturize and firm the skin.</p>
+        </div>
+        <div class="col after">
+          <h4>After: my copy</h4>
+          <p class="headline-line">Who said massage is only for knots and cramps?</p>
+          <p>Massage plays a big role in our lives, physically and mentally, because it helps with:</p>
+          <p><strong>Relieving muscle tension and pain.</strong> It relaxes tight muscles and eases the cramps that come from strain or long hours of sitting, reducing neck and back aches.</p>
+          <p><strong>Reducing stress and anxiety.</strong> It calms the body and releases the happiness and relaxation hormones: comfort for the muscles and for the mind.</p>
+          <p><strong>Better sleep.</strong> When the muscles loosen and the body settles, massage helps you fall into a deep, restful sleep.</p>
+          <p>But massage can’t be done dry. It needs a dedicated oil that helps you relax and lets the hands glide over the skin.</p>
+          <p>At Al-Kahraman, we offer the colocynth cream and the massage oil, with special properties for a session worth talking about.</p>
+          <p class="cta-line">One dot from you is all it takes. Comment “.” below and the details will reach you. Shipping available.</p>
+        </div>
+      </div>
+
+      <p class="note"><strong>Why it worked:</strong> the supplier described an oil. I opened by challenging a belief, showed the reader three moments they recognise, and made replying effortless. <strong>Note:</strong> written in Levantine Arabic and translated for this page, for the local Syrian market. For US, UK and Canadian brands I write wellness claims to fit FDA, FTC and ASA guidelines.</p>
+    </article>
+
+    <!-- CASE 2 -->
+    <article class="case">
+      <p class="tag">Unsolicited spec rewrite · Healthcare talent platform · Not client work</p>
+      <h3>A category description turned into a loss the reader already fears</h3>
+
+      <div class="pair">
+        <div class="col before">
+          <h4>Before: the live homepage hero</h4>
+          <p class="headline-line">The Missing Link to Lasting Talent</p>
+          <p>A smarter way to hire and keep clinical talent.</p>
+        </div>
+        <div class="col after">
+          <h4>After: my rewrite</h4>
+          <p class="headline-line">Your best candidates are committing to someone else’s hospital before they graduate.</p>
+          <p>Build relationships with future clinicians while they’re still in training, so they choose you on graduation day and stay long after.</p>
+          <p class="cta-line">Meet your future clinicians first</p>
+        </div>
+      </div>
+
+      <p class="note"><strong>The problem:</strong> the original names a category. It could sit on any hiring platform, and it gives the reader nothing to feel. <strong>The fix:</strong> the new headline names what the reader is losing right now, the subhead explains how to stop losing it, and the button continues that thought instead of saying “Get started”.</p>
+    </article>
+
+    <!-- CASE 3 -->
+    <article class="case">
+      <p class="tag">Concept piece · Welcome email for a fictional focus app, Stillgrid · Not client work</p>
+      <h3>A welcome email that sends the reader to a first session, not just a guide</h3>
+      <p class="note">Stillgrid is an invented app that mutes notifications and runs timed deep-work sessions.</p>
+
+      <div class="email" role="group" aria-label="Sample email">
+        <div class="meta">
+          <span><strong>Subject:</strong> Your focus didn’t disappear</span>
+          <span><strong>Preview:</strong> Here’s how to get it back, one session at a time.</span>
+        </div>
+        <p>Hey %name%,</p>
+        <p>If focusing has felt harder lately, nothing is wrong with you.</p>
+        <p>The world is louder than ever: notifications, tabs, messages, everything competing for your attention at once.</p>
+        <p>Focus didn’t disappear.<br>It just got crowded out.</p>
+        <p>You’ve already made the shift that matters: you chose to change your environment instead of blaming yourself. Stillgrid mutes the noise while your session runs, so deep work can feel natural again.</p>
+        <p>So don’t overthink the start.<br>One task. One session. No distractions.</p>
+        <p>Your Focus Guide walks you through your first session, step by step.</p>
+        <span class="btn-fake">Open your Focus Guide</span>
+        <p>Talk soon,<br>Maya<br>Stillgrid</p>
+        <p>P.S. Hit reply and tell me what steals your focus most. I read every response.</p>
+      </div>
+
+      <p class="note"><strong>What I fixed in my own first draft:</strong> the link used to sit mid-email behind “Click here”, so the email ended on advice instead of an action. It now closes on a button that names what the reader gets. “Create isolation” became what the app actually does, and the sign-off became a person, because replies are what a welcome email needs most.</p>
+    </article>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What I write</h2>
+    <p class="prose">For B2B SaaS teams and natural-product e-commerce brands in the US, UK and Canada.</p>
+    <div class="offers">
+      <div>
+        <h3>Landing pages</h3>
+        <p>A full rewrite, or the part that’s leaking: the hero, the offer section, the call to action.</p>
+      </div>
+      <div>
+        <h3>Email sequences</h3>
+        <p>Welcome, nurture and launch emails that carry a reader from interest to a first action.</p>
+      </div>
+      <div>
+        <h3>Copy teardown</h3>
+        <p>A written review of your page with a rewritten headline and call to action, so you can see the difference before you commit.</p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1.75rem;">Scope and price are agreed after a short conversation about your page.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="prose">I’m a law graduate who taught himself English, published a novel with Austin Macaulay Publishers, competed as an athlete for eight years, and runs a natural products store.</p>
+    <p class="prose">That mix is the job. A novelist knows how a story earns attention. An athlete knows what consistency costs. A shop owner knows what makes a buyer reach for their wallet. I bring all three to your page.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Send me your page</h2>
+    <p class="prose">Send the link and one sentence about who it’s for. I’ll reply with the first thing I’d change.</p>
+    <a class="btn" href="mailto:wafi.hafez@wafi-copy.com?subject=My%20page">Email me your page</a>
+    <p class="note" style="margin-top:1rem;">Or write to <strong>wafi.hafez@wafi-copy.com</strong> from any email account.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© Wafi Hafez</div>
+</footer>
+
+</body>
+</html>
